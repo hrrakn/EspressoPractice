@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-as/values-as.xml",
+            "map": [
+                {
+                    "source": "/Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/3c6f50ef9c1a102a403dadec26387ffe/jetified-navigation-ui-2.0.0/res/values-as/values-as.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,160",
+                        "endColumns": "104,116",
+                        "endOffsets": "155,272"
+                    }
+                },
+                {
+                    "source": "/Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/589804a2ba0ef83b30909c218d55c90f/core-1.1.0/res/values-as/values-as.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "277",
+                        "endColumns": "100",
+                        "endOffsets": "373"
+                    }
+                }
+            ]
+        }
+    ]
+}

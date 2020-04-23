@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/list_item_garden_planting.xml",
+        "source": "/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/res/layout/list_item_garden_planting.xml"
+    },
+    {
+        "merged": "/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_plant_list.xml",
+        "source": "/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/res/layout/fragment_plant_list.xml"
+    },
+    {
+        "merged": "/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_plant_detail.xml",
+        "source": "/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/res/layout/fragment_plant_detail.xml"
+    },
+    {
+        "merged": "/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/list_item_plant.xml",
+        "source": "/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/res/layout/list_item_plant.xml"
+    },
+    {
+        "merged": "/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_garden.xml",
+        "source": "/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/res/layout/fragment_garden.xml"
+    },
+    {
+        "merged": "/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_garden.xml",
+        "source": "/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/res/layout/activity_garden.xml"
+    }
+]

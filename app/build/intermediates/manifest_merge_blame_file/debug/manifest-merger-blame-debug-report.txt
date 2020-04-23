@@ -1,0 +1,284 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright 2018 Google LLC
+4  ~
+5  ~ Licensed under the Apache License, Version 2.0 (the "License");
+6  ~ you may not use this file except in compliance with the License.
+7  ~ You may obtain a copy of the License at
+8  ~
+9  ~     https://www.apache.org/licenses/LICENSE-2.0
+10  ~
+11  ~ Unless required by applicable law or agreed to in writing, software
+12  ~ distributed under the License is distributed on an "AS IS" BASIS,
+13  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14  ~ See the License for the specific language governing permissions and
+15  ~ limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.google.samples.apps.sunflower"
+19    android:versionCode="1"
+20    android:versionName="0.1.6" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="19"
+23-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml
+24        android:targetSdkVersion="28" />
+24-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml
+25
+26    <uses-permission android:name="android.permission.INTERNET" />
+26-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:21:5-67
+26-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:21:22-64
+27    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+27-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:22:5-79
+27-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:22:22-76
+28    <uses-permission android:name="android.permission.REORDER_TASKS" />
+28-->[androidx.fragment:fragment-testing:1.1.0] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/b09fc31bea48c59d1eecff708030c4de/fragment-testing-1.1.0/AndroidManifest.xml:25:5-72
+28-->[androidx.fragment:fragment-testing:1.1.0] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/b09fc31bea48c59d1eecff708030c4de/fragment-testing-1.1.0/AndroidManifest.xml:25:22-69
+29    <uses-permission android:name="android.permission.WAKE_LOCK" />
+29-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:23:5-68
+29-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:23:22-65
+30    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+30-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:25:5-81
+30-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:25:22-78
+31
+32    <application
+32-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:24:5-41:19
+33        android:allowBackup="true"
+33-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:25:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.1.0] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/589804a2ba0ef83b30909c218d55c90f/core-1.1.0/AndroidManifest.xml:24:18-86
+35        android:debuggable="true"
+36        android:icon="@mipmap/ic_launcher"
+36-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:26:9-43
+37        android:label="@string/app_name"
+37-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:27:9-41
+38        android:roundIcon="@mipmap/ic_launcher_round"
+38-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:28:9-54
+39        android:supportsRtl="true"
+39-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:29:9-35
+40        android:theme="@style/AppTheme" >
+40-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:30:9-40
+41        <activity
+41-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:31:9-39:20
+42            android:name="com.google.samples.apps.sunflower.GardenActivity"
+42-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:32:13-43
+43            android:theme="@style/AppTheme.NoActionBar" >
+43-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:33:13-56
+44            <intent-filter>
+44-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:34:13-38:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:35:17-69
+45-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:35:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:37:17-77
+47-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:37:27-74
+48            </intent-filter>
+49        </activity>
+50        <activity android:name="com.google.samples.apps.sunflower.PracticeActivity" />
+50-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:40:9-53
+50-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:40:19-51
+51        <activity
+51-->[androidx.fragment:fragment-testing:1.1.0] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/b09fc31bea48c59d1eecff708030c4de/fragment-testing-1.1.0/AndroidManifest.xml:28:9-37:20
+52            android:name="androidx.fragment.app.testing.FragmentScenario$EmptyFragmentActivity"
+52-->[androidx.fragment:fragment-testing:1.1.0] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/b09fc31bea48c59d1eecff708030c4de/fragment-testing-1.1.0/AndroidManifest.xml:29:13-96
+53            android:exported="true"
+53-->[androidx.fragment:fragment-testing:1.1.0] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/b09fc31bea48c59d1eecff708030c4de/fragment-testing-1.1.0/AndroidManifest.xml:30:13-36
+54            android:multiprocess="true"
+54-->[androidx.fragment:fragment-testing:1.1.0] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/b09fc31bea48c59d1eecff708030c4de/fragment-testing-1.1.0/AndroidManifest.xml:31:13-40
+55            android:taskAffinity=""
+55-->[androidx.fragment:fragment-testing:1.1.0] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/b09fc31bea48c59d1eecff708030c4de/fragment-testing-1.1.0/AndroidManifest.xml:32:13-36
+56            android:theme="@style/FragmentScenarioEmptyFragmentActivityTheme" >
+56-->[androidx.fragment:fragment-testing:1.1.0] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/b09fc31bea48c59d1eecff708030c4de/fragment-testing-1.1.0/AndroidManifest.xml:33:13-78
+57            <intent-filter>
+57-->[androidx.fragment:fragment-testing:1.1.0] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/b09fc31bea48c59d1eecff708030c4de/fragment-testing-1.1.0/AndroidManifest.xml:34:13-36:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:35:17-69
+58-->/Users/i.ami.nakagawa/Desktop/codelabs/sources/android-ui-tests-espresso/app/src/main/AndroidManifest.xml:35:25-66
+59            </intent-filter>
+60        </activity>
+61
+62        <provider
+62-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:28:9-34:35
+63            android:name="androidx.work.impl.WorkManagerInitializer"
+63-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:29:13-69
+64            android:authorities="com.google.samples.apps.sunflower.workmanager-init"
+64-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:30:13-68
+65            android:directBootAware="false"
+65-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:31:13-44
+66            android:exported="false"
+66-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:32:13-37
+67            android:multiprocess="true" />
+67-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:33:13-40
+68
+69        <service
+69-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:36:9-41:35
+70            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+70-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:37:13-88
+71            android:directBootAware="false"
+71-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:38:13-44
+72            android:enabled="@bool/enable_system_alarm_service_default"
+72-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:39:13-72
+73            android:exported="false" />
+73-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:40:13-37
+74        <service
+74-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:42:9-48:35
+75            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+75-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:43:13-84
+76            android:directBootAware="false"
+76-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:44:13-44
+77            android:enabled="@bool/enable_system_job_service_default"
+77-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:45:13-70
+78            android:exported="true"
+78-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:46:13-36
+79            android:permission="android.permission.BIND_JOB_SERVICE" />
+79-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:47:13-69
+80
+81        <receiver
+81-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:50:9-55:35
+82            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+82-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:51:13-88
+83            android:directBootAware="false"
+83-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:52:13-44
+84            android:enabled="true"
+84-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:53:13-35
+85            android:exported="false" />
+85-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:54:13-37
+86        <receiver
+86-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:56:9-66:20
+87            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+87-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:57:13-106
+88            android:directBootAware="false"
+88-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:58:13-44
+89            android:enabled="false"
+89-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:59:13-36
+90            android:exported="false" >
+90-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:60:13-37
+91            <intent-filter>
+91-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:62:13-65:29
+92                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+92-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:63:17-87
+92-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:63:25-84
+93                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+93-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:64:17-90
+93-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:64:25-87
+94            </intent-filter>
+95        </receiver>
+96        <receiver
+96-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:67:9-77:20
+97            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+97-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:68:13-104
+98            android:directBootAware="false"
+98-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:69:13-44
+99            android:enabled="false"
+99-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:70:13-36
+100            android:exported="false" >
+100-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:71:13-37
+101            <intent-filter>
+101-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:73:13-76:29
+102                <action android:name="android.intent.action.BATTERY_OKAY" />
+102-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:74:17-77
+102-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:74:25-74
+103                <action android:name="android.intent.action.BATTERY_LOW" />
+103-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:75:17-76
+103-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:75:25-73
+104            </intent-filter>
+105        </receiver>
+106        <receiver
+106-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:78:9-88:20
+107            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+107-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:79:13-104
+108            android:directBootAware="false"
+108-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:80:13-44
+109            android:enabled="false"
+109-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:81:13-36
+110            android:exported="false" >
+110-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:82:13-37
+111            <intent-filter>
+111-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:84:13-87:29
+112                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+112-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:85:17-83
+112-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:85:25-80
+113                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+113-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:86:17-82
+113-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:86:25-79
+114            </intent-filter>
+115        </receiver>
+116        <receiver
+116-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:89:9-98:20
+117            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+117-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:90:13-103
+118            android:directBootAware="false"
+118-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:91:13-44
+119            android:enabled="false"
+119-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:92:13-36
+120            android:exported="false" >
+120-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:93:13-37
+121            <intent-filter>
+121-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:95:13-97:29
+122                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+122-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:96:17-79
+122-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:96:25-76
+123            </intent-filter>
+124        </receiver>
+125        <receiver
+125-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:99:9-110:20
+126            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+126-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:100:13-88
+127            android:directBootAware="false"
+127-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:101:13-44
+128            android:enabled="false"
+128-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:102:13-36
+129            android:exported="false" >
+129-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:103:13-37
+130            <intent-filter>
+130-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:105:13-109:29
+131                <action android:name="android.intent.action.BOOT_COMPLETED" />
+131-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:106:17-79
+131-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:106:25-76
+132                <action android:name="android.intent.action.TIME_SET" />
+132-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:107:17-73
+132-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:107:25-70
+133                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+133-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:108:17-81
+133-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:108:25-78
+134            </intent-filter>
+135        </receiver>
+136        <receiver
+136-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:111:9-120:20
+137            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+137-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:112:13-99
+138            android:directBootAware="false"
+138-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:113:13-44
+139            android:enabled="@bool/enable_system_alarm_service_default"
+139-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:114:13-72
+140            android:exported="false" >
+140-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:115:13-37
+141            <intent-filter>
+141-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:117:13-119:29
+142                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+142-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:118:17-98
+142-->[androidx.work:work-runtime:2.1.0-alpha02] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4c394497d800c837a47a140549c7b13f/work-runtime-2.1.0-alpha02/AndroidManifest.xml:118:25-95
+143            </intent-filter>
+144        </receiver>
+145
+146        <service
+146-->[androidx.room:room-runtime:2.1.0-beta01] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4b59c40be5c64bc5251de3197e9aeec4/room-runtime-2.1.0-beta01/AndroidManifest.xml:23:9-25:40
+147            android:name="androidx.room.MultiInstanceInvalidationService"
+147-->[androidx.room:room-runtime:2.1.0-beta01] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4b59c40be5c64bc5251de3197e9aeec4/room-runtime-2.1.0-beta01/AndroidManifest.xml:24:13-74
+148            android:exported="false" />
+148-->[androidx.room:room-runtime:2.1.0-beta01] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/4b59c40be5c64bc5251de3197e9aeec4/room-runtime-2.1.0-beta01/AndroidManifest.xml:25:13-37
+149
+150        <provider
+150-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha01] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/fe39e4d3221326cd850c8eb1683b4d31/lifecycle-process-2.2.0-alpha01/AndroidManifest.xml:23:9-27:43
+151            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+151-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha01] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/fe39e4d3221326cd850c8eb1683b4d31/lifecycle-process-2.2.0-alpha01/AndroidManifest.xml:24:13-79
+152            android:authorities="com.google.samples.apps.sunflower.lifecycle-process"
+152-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha01] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/fe39e4d3221326cd850c8eb1683b4d31/lifecycle-process-2.2.0-alpha01/AndroidManifest.xml:25:13-69
+153            android:exported="false"
+153-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha01] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/fe39e4d3221326cd850c8eb1683b4d31/lifecycle-process-2.2.0-alpha01/AndroidManifest.xml:26:13-37
+154            android:multiprocess="true" />
+154-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha01] /Users/i.ami.nakagawa/.gradle/caches/transforms-2/files-2.1/fe39e4d3221326cd850c8eb1683b4d31/lifecycle-process-2.2.0-alpha01/AndroidManifest.xml:27:13-40
+155    </application>
+156
+157</manifest>
