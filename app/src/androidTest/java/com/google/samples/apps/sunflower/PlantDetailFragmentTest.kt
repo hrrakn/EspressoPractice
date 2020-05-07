@@ -10,7 +10,13 @@ import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.espresso.matcher.ViewMatchers.withText
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.MediumTest
+import androidx.test.platform.app.InstrumentationRegistry
+import androidx.test.uiautomator.By
+import androidx.test.uiautomator.UiDevice
+import androidx.test.uiautomator.Until.hasObject
+import com.google.samples.apps.sunflower.utilities.CoroutinePlugin
 import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.asCoroutineDispatcher
 import org.junit.After
 import org.junit.Assert.assertTrue
 import org.junit.Before
@@ -41,8 +47,7 @@ class PlantDetailFragmentTest {
     fun addPlantToGarden_UIAutomator() {
 
         // TODO UiDeviceのインスタンスを取得する
-
-        // plantId = 1を渡してPlantDetailFragmentを起動する
+        val uiDevice = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation())        // plantId = 1を渡してPlantDetailFragmentを起動する
         val bundle = PlantDetailFragmentArgs("1").toBundle()
         val scenario = launchFragmentInContainer<PlantDetailFragment>(bundle, R.style.AppTheme_NoActionBar)
 
@@ -52,9 +57,9 @@ class PlantDetailFragmentTest {
         onView(withId(R.id.fab)).perform(click())
 
         // TODO SnackBarのTextView(R.id.snackbar_text)の文字列が'Save finished'のときにtrueを返すSearch Conditionを作る
-
-        // TODO UiDeviceで条件の検索を行う
-        val waitSuccess = false
+        val searchCondition = hasObject(By.res(toResourceName(R.id.snackbar_text)).text("Save finished"))
+// TODO UiDeviceで条件の検索を行う
+        val waitSuccess = uiDevice.wait(searchCondition, 3000L)
 
         // 条件に合致していたらtrueが返ってくる
         assertTrue("Elementが見つかりませんでした(id: R.id.snackbar_text, text: Save finished)", waitSuccess)
@@ -68,7 +73,7 @@ class PlantDetailFragmentTest {
                 LinkedBlockingQueue<Runnable>(), ThreadFactory { r -> Thread(r) })
 
         // TODO CoroutinePlugin#ioDispatcherHandlerをIdlingThreadPoolExecutorから生成されるCoroutine Dispatcherに差し替える
-
+        CoroutinePlugin.ioDispatcherHandler = {executor.asCoroutineDispatcher()}
         val bundle = PlantDetailFragmentArgs("1").toBundle()
         val scenario = launchFragmentInContainer<PlantDetailFragment>(bundle, R.style.AppTheme_NoActionBar)
         dataBindingIdlingResource.monitorFragment(scenario)
