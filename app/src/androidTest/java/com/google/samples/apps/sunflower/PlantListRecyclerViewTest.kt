@@ -11,7 +11,10 @@ import androidx.test.espresso.contrib.RecyclerViewActions
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.rules.activityScenarioRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.google.samples.apps.sunflower.CustomViewAction.clickDescendantViewWithId
+import com.google.samples.apps.sunflower.CustomViewMatcher.withItemViewAtPosition
 import com.google.samples.apps.sunflower.adapters.PlantAdapter
+import org.hamcrest.CoreMatchers.allOf
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule
@@ -53,7 +56,7 @@ class PlantListRecyclerViewTest {
     fun clickActionOnItemAtPositionTest() {
 
         // TODO RecyclerView(id:plant_list)のアイテム(position = 3)をスクロール + クリック
-
+        onView(withId(R.id.plant_list)).perform(RecyclerViewActions.actionOnItemAtPosition<PlantAdapter.ViewHolder>(3,click()))
         // 詳細画面が表示されて、plane nameがTomatoであること確認
         onView(withId(R.id.plant_name)).check(matches(withText("Tomato")))
     }
@@ -62,7 +65,7 @@ class PlantListRecyclerViewTest {
     fun clickActionOnItemTest() {
 
         // TODO RecyclerView(id:plant_list)のPearをテキストに持つアイテムまでスクロール後、clickする
-
+        onView(withId(R.id.plant_list)).perform(RecyclerViewActions.actionOnItem<PlantAdapter.ViewHolder>(withText("Pear"),click()))
         // 詳細画面が表示されて、plane nameがPearであること確認
         onView(withId(R.id.plant_name)).check(matches(withText("Pear")))
     }
@@ -80,11 +83,11 @@ class PlantListRecyclerViewTest {
                 .perform(RecyclerViewActions.scrollToPosition<PlantAdapter.ViewHolder>(totalPlantSize - 1))
 
         // TODO カスタムマッチャーのwithItemViewAtPositionを使って、アイテムビュー子TextViewを指定する
-        val matcher = withId(R.id.plant_list)
-
-        onView(matcher)
-                .check(matches(withText("Pink & White Lady's Slipper")))
-                .check(matches(isDisplayed()))
+        onView(allOf(
+                isDescendantOfA(withItemViewAtPosition(withId(R.id.plant_list), totalPlantSize - 1)),
+                withId(R.id.plant_item_title)))
+                        .check(matches(withText("Pink & White Lady's Slipper")))
+                        .check(matches(isDisplayed()))
     }
 
     @Test
@@ -101,7 +104,8 @@ class PlantListRecyclerViewTest {
         onView(withId(R.id.plant_list))
                 .perform(RecyclerViewActions.actionOnItemAtPosition<PlantAdapter.ViewHolder>(
                         totalPlantSize - 1,
-                        action))
+                        clickDescendantViewWithId(R.id.plant_item_title)))
+
 
         // 指定した位置のplane nameであることを確認
         onView(withId(R.id.snackbar_text)).check(matches(withText("clicked title: Pink & White Lady's Slipper")))
